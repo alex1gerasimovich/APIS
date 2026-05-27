@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WarehouseTestSuite" verbose="2">
+
+    <test name="Entity">
+        <classes>
+            <class name="com.warehouse.entity.ProductTest"/>
+        </classes>
+    </test>
+
+    <test name="Singleton">
+        <classes>
+            <class name="com.warehouse.singleton.WarehouseTest"/>
+        </classes>
+    </test>
+
+    <test name="Command">
+        <classes>
+            <class name="com.warehouse.command.AddProductCommandTest"/>
+            <class name="com.warehouse.command.RemoveProductCommandTest"/>
+        </classes>
+    </test>
+
+    <test name="Iterator">
+        <classes>
+            <class name="com.warehouse.iterator.ProductIteratorTest"/>
+        </classes>
+    </test>
+
+    <test name="Facade">
+        <classes>
+            <class name="com.warehouse.facade.WarehouseFacadeTest"/>
+        </classes>
+    </test>
+
+    <test name="Validator">
+        <classes>
+            <class name="com.warehouse.validator.ProductValidatorTest"/>
+        </classes>
+    </test>
+
+    <test name="Reader">
+        <classes>
+            <class name="com.warehouse.reader.ProductReaderTest"/>
+        </classes>
+    </test>
+
+</suite>
